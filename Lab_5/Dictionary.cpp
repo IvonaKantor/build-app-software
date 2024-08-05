@@ -27,7 +27,7 @@ namespace Dictionary {
 			throw THROW03;
 		}
 		//checking for duplication
-		for (int i = 0; i < inst.size; ++i) {
+		for (int i = 0; i < inst.size; i++) {
 			if (inst.dictionary[i].id == ed.id) {
 				throw THROW04;
 			}
