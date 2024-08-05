@@ -14,7 +14,7 @@
 
 namespace Dictionary {
 	struct Entry {
-		int id;  //id(unique)
+		int id;
 		char name[ENTRYNAMEMAXSIZE];
 	};
 	struct Instance {

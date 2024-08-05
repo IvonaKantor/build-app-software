@@ -8,8 +8,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	try {
 		Dictionary::Instance d1 = Dictionary::Create("Workers", 5);
-		Dictionary::Entry e1 = { 1,"first" }, e2 = { 2, "second" },
-			e3 = { 3, "third" };
+		Dictionary::Entry e1 = { 1,"first" }, e2 = { 2, "second" }, e3 = { 3, "third" };
 		Dictionary::AddEntry(d1, e1);
 		Dictionary::AddEntry(d1, e2);
 		Dictionary::AddEntry(d1, e3);
