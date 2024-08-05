@@ -61,19 +61,8 @@ int main() {
 	//Values are passed through variable capture, while skipping the parentheses to add parameters
 	for (auto i : v) [i] {if (i % 3 == 0) std::cout << i << " "; }();
 
-
-	//Concate obj;
-	//myfun(obj);
-
-
 	int num = 6;
-	if (lambda(num)) {
-		std::cout << num << "is positive\n";
-	}
-	else {
-		std::cout << num << "is negative";
-	}
-
+	std::cout << num << (lambda(num) ? "is positive" : "is negative") << std::endl;
 
 	char letter = 'T';
 	int integer = 56;
@@ -83,10 +72,8 @@ int main() {
 	std::cout << "integer " << integer << " " << check(integer) << std::endl;
 	std::cout << "float " << fraction << " " << check(fraction) << std::endl;
 
-
 	std::string result = conct(":", ")");
 	std::cout << result << std::endl;
-
 
 	std::string resLong = longerStr("Hi,", "!");
 	std::cout << resLong << std::endl;
